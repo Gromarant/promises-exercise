@@ -15,7 +15,14 @@ function secondPromise() {
 }
 
 function thirdPromise(isError) {
-  /* Write your code here */
+  let promiseThree = new Promise((resolve, reject) => {
+    if(!isError) {
+      resolve('done');
+    } else {
+      reject('error');
+    }
+  })
+  return promiseThree
 }
 
 // SECOND PART ASYNC/AWAIT
