@@ -8,7 +8,10 @@ function firstPromise() {
 }
 
 function secondPromise() {
-  /* Write your code here */
+  let promiseTwo = new Promise((resolve, reject) => {
+    reject('error');
+  });
+  return promiseTwo;
 }
 
 function thirdPromise(isError) {
