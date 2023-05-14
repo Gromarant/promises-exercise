@@ -1,7 +1,10 @@
 // FIRST PART
 
 function firstPromise() {
-  /* Write your code here */
+  let promiseOne = new Promise((resolve, reject) => {
+    resolve('done');
+  });
+  return promiseOne;
 }
 
 function secondPromise() {
