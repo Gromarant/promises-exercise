@@ -34,6 +34,18 @@ const fourthPromise = async () => {
 }
 
 /* Make a change to transform this function to a async function */
-function fifthPromise(isError) {
-  /* Write your code here */
+async function fifthPromise(isError) {
+  let promiseFive = new Promise((resolve, reject) => {
+    if (isError) {
+      reject({ message: 'error' });
+    } else {
+      resolve('done');
+    }
+  })
+  try {
+    return await promiseFive;
+  }
+  catch (error) {
+    return error;
+  }
 }
