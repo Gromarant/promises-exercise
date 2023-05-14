@@ -28,9 +28,9 @@ function thirdPromise(isError) {
 // SECOND PART ASYNC/AWAIT
 
 /* Make a change to transform this function to a async function */
-function fourthPromise() {
-  /* Change this with async/await*/
-  firstPromise().then();
+const fourthPromise = async () => {
+ let data = await firstPromise();
+ return data;
 }
 
 /* Make a change to transform this function to a async function */
